@@ -1,0 +1,24 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
+class FirebaseAuthService {
+  FirebaseAuth auth = FirebaseAuth.instance;
+
+  login() async {
+    try {
+      return await auth.signInWithEmailAndPassword(
+          email: "madson_carvalho@estudante.sesisenai.org.br",
+          password: "12345");
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  recoverPassword() async {
+    try {
+      return await auth.sendPasswordResetEmail(
+          email: "madson_carvalho@estudante.sesisenai.org.br");
+    } catch (e) {
+      rethrow;
+    }
+  }
+}
