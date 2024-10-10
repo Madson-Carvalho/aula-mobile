@@ -23,6 +23,7 @@ class LoginPage extends StatelessWidget {
               size: 180,
             ),
             CustomInput(
+              controller: TextEditingController(),
               labelText: 'Email',
               icon: const Icon(Icons.email),
             ),

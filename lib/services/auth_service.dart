@@ -21,4 +21,9 @@ class FirebaseAuthService {
       rethrow;
     }
   }
+
+  checkUser() async {
+    var user = auth.currentUser!.displayName;
+    return user;
+  }
 }
