@@ -7,7 +7,7 @@ class FirebaseAuthService {
     try {
       return await auth.signInWithEmailAndPassword(
           email: "madson_carvalho@estudante.sesisenai.org.br",
-          password: "12345");
+          password: "123456");
     } catch (e) {
       rethrow;
     }
